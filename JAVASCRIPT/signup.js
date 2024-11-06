@@ -19,7 +19,7 @@ document.getElementById('signupButton').addEventListener('click', (e) => {
             messageElement.style.color = "green";
             messageElement.textContent = "Sign-up successful! Redirecting...";
 
-            setTimeout(() => window.location.href = "login.html", 1000);
+            setTimeout(() => window.location.href = "index.html", 1000);
         })
         .catch((error) => {
             messageElement.textContent = error.message;
