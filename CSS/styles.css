@@ -1,0 +1,314 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font Import */
+@font-face {
+    font-family: LEMONMILK-Bold;
+    src: url(../Fonts/LEMONMILK-Bold.otf);
+}
+
+@font-face {
+    font-family: LEMONMILK-Light;
+    src: url(../Fonts/LEMONMILK-Light.otf);
+}
+
+/* Layout */
+.left {
+    margin-right: auto;
+}
+
+.right {
+    margin-left: auto;
+}
+
+/* Form Styling */
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+    border-radius: 5px;
+    font-family: Arial;
+}
+
+button {
+    background-color: rgb(23, 32, 52);
+    color: white;
+    font-family: LEMONMILK-Light;
+    font-size: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 40px;
+    width: 120px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Navigation */
+nav {
+    background-color: #ffffff;
+    color: rgb(23, 32, 52);
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    font-family: LEMONMILK-Bold;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    font-family: LEMONMILK-Light;
+    font-size: 14px;
+}
+
+.nav-item {
+    margin: 0 10px;
+    text-decoration: none;
+    color: rgb(23, 32, 52);
+}
+
+.nav-item.current {
+    font-family: LEMONMILK-Bold;
+}
+
+.nav-item.btn {
+    width: 100px;
+    color: #ffffff;
+}
+
+/* Containers */
+.container {
+    width: 100%;
+    background-color: rgba(28, 43, 76, 0.262);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    height: 545px;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Typography */
+.title {
+    font-family: LEMONMILK-Bold;
+    font-size: 40px;
+    color: rgb(23, 32, 52);
+}
+
+.loginh2, h2 {
+    font-family: LEMONMILK-Light;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.loginh2 {
+    margin-top: 60px;
+}
+
+.description, p {
+    font-family: LEMONMILK-Light;
+    font-size: 10px;
+    color: rgb(23, 32, 52);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* For phones */
+@media screen and (max-width: 600px) {
+    button {
+        height: 30px;
+        width: 100px;
+    }
+
+    span {
+        font-size: 9px;
+    }
+
+    .nav-item {
+        margin: 0 3px;
+        font-size: 8px;
+    }
+
+    .nav-item.btn {
+        font-size: 10px;
+        width: 60px;
+    }
+
+    .nav-right button {
+        width: 60px;
+        font-size: 5px;
+        height: 30px;
+    }
+
+    input, .password-wrapper, .password-wrapper input, .password-wrapper .form-control {
+        width: 260px !important;
+    }
+
+    .eye-btn {
+        bottom: 14px !important;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 7px;
+    }
+
+    #search-input {
+        width: 180px !important;
+    }
+
+    #search-button, #my-location {
+        width: 50px;
+        font-size: 7px;
+    }
+
+    #notificationList {
+        width: 300px !important;
+    }
+
+    #notificationList li {
+        font-size: 10px;
+    }
+
+    .red-dot {
+        top: 25px;
+        right: 87px !important;
+        height: 6px !important;
+        width: 6px !important;
+    }
+}
+
+/* Password Wrapper */
+.password-wrapper {
+    position: relative;
+    width: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper input, .password-wrapper .form-control {
+    padding-right: 40px;
+}
+
+/* Eye Button for Password */
+.eye-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 1px;
+    bottom: 9px;
+    width: 50px;
+}
+
+.eye-btn i {
+    color: #000;
+    font-size: 18px;
+}
+
+/* Map Styling */
+#map {
+    height: 450px;
+    width: 90%;
+    border: 6px solid rgb(23, 32, 52);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Notification Styling */
+#notificationList {
+    list-style-type: none;
+    padding: 15px;
+    margin: 0;
+    background-color: rgb(23, 32, 52);
+    border-radius: 10px;
+    overflow-y: auto;
+    font-family: LEMONMILK-Light;
+    font-size: 12px;
+    width: 700px;
+}
+
+#notificationList li {
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#notificationList i {
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.red-dot {
+    position: absolute;
+    top: 25px;
+    right: 140px;
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border-radius: 50%;
+    display: none;
+}
+
+/* Loading Indicator */
+#loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+}
+
+/* Popup notification styling */
+.notification-popup {
+    position: fixed;
+    top: 15px;
+    right: -300px; /* Initially hidden off-screen to the right */
+    background-color: rgb(23, 32, 52);
+    border-radius: 10px;
+    transition: right 0.5s ease; /* Slide-in effect */
+    width: 280px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Class to make the popup slide in */
+.notification-popup.show {
+    right: -10px; /* Slide in to be visible */
+}
+
+#popupText {
+    color: #ffffff;
+    font-size: 12px;
+}

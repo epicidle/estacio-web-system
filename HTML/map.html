@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIA101</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <span>SIA101 GROUP5</span>
+        </div>
+        <div class="nav-right">
+            <a href="../HTML/index.html" class="nav-item">Home</a>
+            <a href="#" class="nav-item current">Map</a>
+            <a href="../HTML/notification.html" class="nav-item" onclick="checkUnreadNotifications()">Notifications</a>
+            <span id="redDot" class="red-dot"></span>
+            <button class="nav-item btn" id="logout">Log Out</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="notificationPopup" class="notification-popup">
+            <p id="popupText">New notification!</p>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for a place..." />
+            <button id="search-button">
+                <img src="../Images/search.png" width="12" height="12">
+            </button>
+            <button id="my-location">My Location</button>
+        </div>
+        <div id="loading" style="display: none;">Loading...</div>
+        <div id="map"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="../JAVASCRIPT/firebase.js"></script>
+    <script type="module" src="../JAVASCRIPT/map.js"></script>
+</body>
+</html>
