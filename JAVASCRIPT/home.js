@@ -5,7 +5,7 @@ import { signOut } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.
 document.getElementById('logout').addEventListener('click', () => {
     signOut(auth).then(() => {
         localStorage.removeItem('currentUserEmail');
-        window.location.href = "index.html";
+        window.location.href = "../index.html";
     }).catch((error) => {
         console.error('Error during sign out:', error);
     });

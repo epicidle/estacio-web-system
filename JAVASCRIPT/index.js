@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     console.log('Data sent successfully to Node.js server');
                     statusIcon.className = 'fa fa-check';
 
-                    setTimeout(() => window.location.href = "../HTML/home.html", 500);
+                    setTimeout(() => window.location.href = "HTML/home.html", 500);
                 })
                 .catch((error) => {
                     loginStatus.textContent = 'Login failed. Please check your Email and Password or Sign Up. REFRESHING THE PAGE';
