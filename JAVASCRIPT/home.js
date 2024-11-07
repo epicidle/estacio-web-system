@@ -13,7 +13,7 @@ document.getElementById('logout').addEventListener('click', () => {
 
 // Check notifications
 async function checkUnreadNotifications() {
-    const response = await fetch('https://donadillo-web-system.onrender.com/logs');
+    const response = await fetch('https://donadillo-web-system-server.onrender.com/logs');
     const logs = await response.json();
     const logEntries = logs.data || logs;
 

@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     localStorage.setItem('currentUserEmail', email);
 
-                    return fetch("https://donadillo-web-system.onrender.com/login", {
+                    return fetch("https://donadillo-web-system-server.onrender.com/login", {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
                         body: JSON.stringify({

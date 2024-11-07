@@ -65,7 +65,7 @@ document.getElementById('search-button').addEventListener('click', () => {
 
                 // Log the search to the server for webhook logging
                 const currentUserEmail = localStorage.getItem('currentUserEmail');
-                fetch('https://donadillo-web-system.onrender.com/location-search', {
+                fetch('https://donadillo-web-system-server.onrender.com/location-search', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -104,7 +104,7 @@ document.getElementById('logout').addEventListener('click', () => {
 let lastUnreadCount = 0; // Variable to track the count of unread notifications
 
 async function checkUnreadNotifications() {
-    const response = await fetch('https://donadillo-web-system.onrender.com/logs');
+    const response = await fetch('https://donadillo-web-system-server.onrender.com/logs');
     const logs = await response.json();
     const logEntries = logs.data || logs;
 

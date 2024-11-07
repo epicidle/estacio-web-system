@@ -8,7 +8,7 @@ const notificationList = document.getElementById('notificationList');
 const fetchLogs = async () => {
     try {
         // Send request to the server to retrieve logs
-        const response = await fetch('https://donadillo-web-system.onrender.com/logs');
+        const response = await fetch('https://donadillo-web-system-server.onrender.com/logs');
         if (!response.ok) throw new Error('Failed to fetch logs'); // Error handling if response fails
         const logs = await response.json(); // Parse logs from JSON format
         const logEntries = logs.data || logs; // Access log entries directly or from the data field
