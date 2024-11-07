@@ -100,7 +100,7 @@ nav {
     height: 545px;
     justify-content: center;
     align-items: center;
-    border: 2px solid rgb(23, 32, 52);
+    border: 3px solid rgb(23, 32, 52);
 }
 
 form {
@@ -199,6 +199,16 @@ form {
         right: 87px !important;
         height: 6px !important;
         width: 6px !important;
+    }
+
+    .notification-popup {
+        width: 165px !important;
+        height: 40px !important;
+        font-size: 12px !important;
+    }
+
+    #popupText {
+        font-size: 8px !important;
     }
 }
 
