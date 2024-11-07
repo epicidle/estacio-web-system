@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 
 // Webhook Url
-const webhookUrl = "https://webhook.site/68e96b63-e5f2-4e65-b1e1-61251604b87d"; // Change URL Here hehe
+const webhookUrl = "https://webhook.site/2645f68b-839e-412a-b19c-9d2cf13a0efa"; // Change URL Here hehe
 const uniqueNum = webhookUrl.slice(21);
 const webhookToken = `https://webhook.site/token/${uniqueNum}/requests`
 
