@@ -136,7 +136,7 @@ function showNotificationPopup() {
     // Remove the 'show' class after 3 seconds to hide the popup
     setTimeout(() => {
         popup.classList.remove('show');
-    }, 3000);
+    }, 2000);
 }
 
 // Check for unread notifications at intervals

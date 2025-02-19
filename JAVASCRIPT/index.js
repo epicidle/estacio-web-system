@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     loginStatus.style.color = 'red';
                     console.error('Error sending data:', error);
 
-                    //setTimeout(() => location.reload(), 4000);
+                    setTimeout(() => location.reload(), 4000);
                 });
         });
     }    

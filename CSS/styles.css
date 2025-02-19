@@ -101,6 +101,10 @@ nav {
     justify-content: center;
     align-items: center;
     border: 3px solid rgb(23, 32, 52);
+    background-image: url(../Images/V1-BLUE-NIGHT-FOREST-1920x1080.webp);
+    background-repeat: no-repeat;
+    background-position: center 10%;
+    background-size: cover;
 }
 
 form {
@@ -136,6 +140,8 @@ form {
 
 /* For phones */
 @media screen and (max-width: 600px) {
+    
+
     button {
         height: 30px;
         width: 100px;
@@ -167,6 +173,10 @@ form {
 
     .eye-btn {
         bottom: 14px !important;
+    }
+
+    .loginbtn, #signupButton, .indexbtn {
+        border: 1px solid #ffffff;
     }
 
     .title {
@@ -244,7 +254,7 @@ form {
 #map {
     height: 450px;
     width: 90%;
-    border: 6px solid rgb(23, 32, 52);
+    border: 3px solid rgb(23, 32, 52);
     border-radius: 5px;
     margin-bottom: 10px;
 }
